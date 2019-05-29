@@ -50,6 +50,7 @@ class OCCViewer(QWidget,ComponentMixin):
         ComponentMixin.__init__(self)
 
         self.canvas = qtViewer3d()
+        self.canvas.InitDriver()
         self.canvas.sig_topods_selected.connect(self.handle_selection)
 
         self.create_actions(self)
