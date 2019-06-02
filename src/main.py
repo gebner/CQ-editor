@@ -8,6 +8,7 @@ NAME = 'CadQuery GUI (PyQT)'
 #need to initialize QApp here, otherewise svg icons do not work on windows
 app = QApplication(sys.argv,
                    applicationName=NAME)
+app.setCursorFlashTime(0)
 
 from .main_window import MainWindow
 
